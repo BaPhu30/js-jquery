@@ -1,0 +1,317 @@
+/* Reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #40E0D0, #ffffff);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Style header */
+.header {
+    width: calc(80%);
+    margin: auto;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header>div {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -5px 5px #333333;
+    margin: 0 0 10px;
+}
+
+.header h2 {
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.header input {
+    width: calc(90%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 34px;
+}
+
+.header label {
+    width: calc(90%);
+    line-height: 36px;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    background-color: #40E0D0;
+    box-shadow: -5px 5px #333333;
+    text-align: center;
+}
+
+label:hover {
+    opacity: 0.5;
+}
+
+.header .address,
+.header .note {
+    margin-bottom: 10px;
+}
+
+.header__add {
+    font-size: 20px;
+    padding: 13px 20px;
+    border-radius: 10px;
+    box-shadow: -5px 5px #333333;
+    margin: 10px 0 50px;
+    background-color: #40E0D0;
+    font-weight: bold;
+}
+
+.header__add:hover {
+    opacity: 0.5;
+}
+
+/* Style main */
+.main {
+    width: calc(80%);
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -5px 5px #333333;
+}
+
+.main li {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 2px solid #333333;
+    font-size: 16px;
+}
+
+.main li>p {
+    width: calc(12% - 10px);
+    overflow: hidden;
+}
+
+.main li>.main__email {
+    width: calc(20%);
+}
+
+.main li>div {
+    width: calc(12%);
+    
+}
+
+.main li div:last-child {
+    display: flex;
+}
+
+.main li button {
+    border-radius: 10px;
+    width: calc(80%) !important;
+    margin: 0 auto;
+    line-height: 36px;
+}
+
+.main li button:first-child {
+    background-color: rgb(39, 255, 50);
+    width: calc(50%);
+    box-shadow: -5px 5px #333333;
+    margin-right: 10px;
+}
+
+.main li button:last-child {
+    background-color: rgb(255, 39, 39);
+    width: calc(50%);
+    box-shadow: -5px 5px #333333;
+}
+
+.main li button:hover {
+    opacity: 0.5;
+}
+
+.main li img {
+    width: 50%;
+}
+
+.main li input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main label {
+    width: calc(100%);
+    line-height: 36px;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    background-color: #40E0D0;
+    box-shadow: -5px 5px #333333;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main li div:last-child {
+        flex-direction: column;
+    }
+
+    .div-main {
+        overflow-x: scroll;
+        width: calc(80%);
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: -5px 5px #333333;
+        margin-bottom: 30px;
+    }
+
+    .main {
+        width: 1000px;
+    }
+
+    .main li button:first-child {
+        margin-bottom: 10px !important;
+    }
+
+}

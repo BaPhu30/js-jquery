@@ -1,0 +1,262 @@
+/* Reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #40E0D0, #ffffff);
+}
+
+/* Style header */
+.header {
+    width: calc(60%);
+    margin: auto;
+    text-align: center;
+}
+
+.header h1 {
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header div {
+    padding: 10px 0;
+}
+
+.header input {
+    width: calc(90% - 5px);
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: -2px 5px #333;
+}
+
+.header button {
+    width: calc(10%);
+    line-height: 24px;
+    font-size: 16px;
+    background-color: #FFFF00;
+    border-radius: 10px;
+    box-shadow: -2px 5px #333;
+}
+
+/* Style main */
+.main {
+    width: calc(80%);
+    margin: auto;
+    text-align: center;
+}
+
+.main li:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: -2px 5px #333;
+}
+
+.main li:first-child h2 {
+    width: calc(80%);
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #333;
+    font-weight: bold;
+}
+
+.main li p {
+    width: calc(10%);
+    font-weight: bold;
+}
+
+.main li p:last-child {
+    border-left: 2px solid #333;
+}
+
+.main li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -2px 5px #333;
+}
+
+.main__div-value {
+    width: calc(90%);
+    display: flex;
+}
+
+.main__div-value h2 {
+    width: calc(100%);
+}
+
+.main__div-value input {
+    width: calc(45%);
+    border: 2px solid #333;
+    font-size: 16px;
+}
+
+.main__div-value button {
+    width: calc(16% - 3px);
+    background-color: rgb(39, 205, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+
+.main__button-edit {
+    width: calc(11% + 5px);
+    background-color: rgb(39, 255, 50);
+    color: #333333;
+    line-height: 24px;
+    font-size: 16px;
+    border-right: none;
+}
+
+.main__button-delete {
+    width: calc(11% + 5px);
+    background-color: rgb(255, 39, 39);
+    color: #333333;
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+}
